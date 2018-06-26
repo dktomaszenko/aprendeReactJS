@@ -1,12 +1,29 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ConditionalSection from './sections/conditional'
+
 
 class Hello extends Component {
     render() {
         return <h1 className="App-title">{this.props.title}</h1>
     }
 }
+class MiLista extends Component {
+    render (){
+        const numbers = [1, 1, 3, 4, 5 ];
+        return (
+            <div>
+                <h4>Trabajando con listas</h4>
+                {numbers.map((number, index)=>{
+                    return <p key={index}>Soy el número {number}</p>
+                })}
+            </div>
+        )
+    }
+}
+
+
 
 class Text extends Component {
     render() {
@@ -23,6 +40,8 @@ class Text extends Component {
                 <p className="App-intro">{mappedNumber.join(', ')}</p>
                 <p className="App-intro">{objectWithInfo.key}</p>
                 <Contador />
+                <ConditionalSection />
+                <MiLista />
             </div>
         )
     }
