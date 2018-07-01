@@ -27,6 +27,9 @@ class App extends Component {
                     number={2}
                 />
                 <Eventos/>
+                <hr/>
+                <h4>Forms</h4>
+                <Forms/>
             </div>
         );
     }
