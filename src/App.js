@@ -5,6 +5,7 @@ import Eventos from "./sections/events";
 import Forms from './sections/forms';
 import Hello from './sections/hello';
 import Text from './sections/text';
+import Article from './sections/article';
 
 
 class App extends Component {
@@ -30,6 +31,11 @@ class App extends Component {
                 <hr/>
                 <h4>Forms</h4>
                 <Forms/>
+                <hr/>
+                <h4>Props</h4>
+                <Article
+                title='No lo se'
+                />
             </div>
         );
     }
