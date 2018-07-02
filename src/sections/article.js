@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import $ from "jquery";
 import PropTypes from 'prop-types';
 
 
@@ -20,6 +21,8 @@ export default class Article extends Component {
 
     componentDidMount(){
         console.log('componentDidMount');
+        // Integrating with jQuery
+        this.$el = $(this.el);
     }
 
     render(){
